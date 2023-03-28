@@ -4,7 +4,8 @@ let video;
 
 //Function
 function updateVolume() {
-	document.getElementById("volume").innerHTML = slider.value+"%";
+	video.volume = (slider.value)/100;
+	document.getElementById("volume").textContent = Math.round(slider.value)+"%";
 }
 
 //Load the window
