@@ -4,7 +4,7 @@ let video;
 
 //Function
 function updateVolume() {
-	document.getElementById("volume").innerHTML = Math.round(slider.value)+"%";
+	document.getElementById("volume").innerHTML = slider.value+"%";
 }
 
 //Load the window
@@ -21,7 +21,7 @@ window.addEventListener("load", function() {
 document.querySelector("#play").addEventListener("click", function() {
 	console.log("Play Video",video);
 	video.play();
-	//updateVolume()
+	updateVolume()
 })
 
 document.querySelector("#slider").addEventListener("change", function() {
